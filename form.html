@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="nav.css">
+    <style>
+        main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1{
+            font-size: 35px;
+        }
+        form{
+            font-size: 18px;
+            background-color: bisque;
+            display: inline-block;
+            padding: 10px 20px;
+            border: 1px solid lightcoral;
+            text-align: center;
+        }
+        span{
+            font-size: 20px;
+            font-weight:600;
+        }
+        button{
+            border: none;
+            padding: 10px 24px;
+            margin-left: 10px;
+            color: white;
+            background-color: rgb(119, 22, 22);
+            cursor: pointer;
+        }
+    </style>
+    
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="form.html">Form</a></li>
+            <li><a href="table.html">Table</a></li>
+            <li>
+                <a href="">More
+                    <ul class="dropdown">
+                        <li><a href="">Link-1</a></li>
+                        <li><a href="">Link-2</a></li>
+                        <li><a href="">Link-3</a></li>
+                        <li><a href="">Link-4</a></li>
+                    </ul>
+                </a>
+            </li>
+            <li><a href="">About Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1><u>Form</u></h1>
+        <form action="">
+            <p><label for="name"><span>Name:</span> <input type="text" placeholder="Enter Your Name" required></label></p>
+            <p><label for="email"><span>Email:</span> <input type="email" placeholder="Enter Your email"></label></p>
+            <p>
+                <label for="grade"><span>Current Grade:</span></label>
+                <select name="grade" id="grade">
+                    <option value="9">9<sup>th</sup></option>
+                    <option value="10" >10<sup>th</sup></option>
+                    <option value="11">11<sup>th</sup></option>
+                    <option value="12">12<sup>th</sup></option>
+                </select>
+            </p>
+            <p>
+                <span>Gender: </span>
+                <label for="male"><input type="radio" name="gender" id="male">Male</label>
+                <label for="female"><input type="radio" name="gender" id="female">Female</label>
+            </p>
+            <p>
+                <span>Select Yout Group: </span>
+                <label for="science"><input type="radio" name="group" id="science">Science</label>
+                <label for="business"><input type="radio" name="group" id="business">Business</label>
+                <label for="arts"><input type="radio" name="group" id="arts">Arts</label>
+            </p>
+            <p>
+                <span>Your area of Experties:</span>
+                <label for="swim"><input type="checkbox" name="experties" id="swim">Swimming</label>
+                <label for="ride"><input type="checkbox" name="experties" id="ride">Riding</label>
+                <label for="football"><input type="checkbox" name="experties" id="football">Football</label>
+                <label for="cricket"><input type="checkbox" name="experties" id="cricket">Cricket</label>
+            </p>
+            <p>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </p>
+        </form>
+    </main>
+</body>
+</html>

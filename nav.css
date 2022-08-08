@@ -1,0 +1,38 @@
+   
+        nav{
+            background-color: lightslategrey;
+        }
+        nav ul{
+            display: flex;
+            justify-content: end;
+        }
+        nav ul li{
+            list-style: none;
+            margin: 20px 10px;
+            padding: 5px 10px;
+            transition: 0.4s;
+        }
+        nav ul li a:hover{
+            color: red;
+            transition: 0.4s;
+        }
+        nav ul li a{
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+        }
+        nav > ul > li:hover >ul{
+            display: block;
+            transition: 0.5s;
+        }
+        .dropdown{
+            display: none;
+            transition: 0.5s;
+            position: absolute;
+            background-color: lightslategray;
+            margin-left: -20px;
+            padding-left: 0;
+        }
+        .dropdown li{
+            border-bottom: 1px solid white;
+        }

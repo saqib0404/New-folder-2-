@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+    <link rel="stylesheet" href="nav.css">
+    <style>
+        h1{
+            font-size: 35px;
+        }
+        td, th{
+            border: 1px solid rgb(0, 0, 0);
+            padding: 5px 10px;
+            text-align: center;
+        }
+        table{
+            border-collapse: collapse;
+            background-color: bisque;
+            font-size: 18px;            
+        }
+        main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="form.html">Form</a></li>
+            <li><a href="table.html">Table</a></li>
+            <li>
+                <a href="">More
+                    <ul class="dropdown">
+                        <li><a href="">Link-1</a></li>
+                        <li><a href="">Link-2</a></li>
+                        <li><a href="">Link-3</a></li>
+                        <li><a href="">Link-4</a></li>
+                    </ul>
+                </a>
+            </li>
+            <li><a href="">About Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>
+           <u> Results</u>
+        </h1>
+        <table>
+            <caption><b>Result of the Top 5:</b></caption>
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>Name</th>
+                    <th>Class</th>
+                    <th>G.P.A</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1.</td>
+                    <td>Saqib Ahmad</td>
+                    <td>10</td>
+                    <td>5.00</td>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>Saad Ahmad</td>
+                    <td>Hons.</td>
+                    <td>4.95</td>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>Soleh Ahmad</td>
+                    <td>12</td>
+                    <td>4.90</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+</body>
+</html>
